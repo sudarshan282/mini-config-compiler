@@ -1,0 +1,10 @@
+# Server configuration
+server {
+  port = 9000
+  debug = false
+}
+
+database {
+  host = "127.0.0.1"
+  pool = 5
+}

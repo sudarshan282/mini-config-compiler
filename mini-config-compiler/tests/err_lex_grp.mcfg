@@ -1,0 +1,4 @@
+a = $$%
+b = 10
+c = "hello"
+d = ^^^!!!   // should become one grouped error token

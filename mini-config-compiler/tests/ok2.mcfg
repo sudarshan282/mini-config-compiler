@@ -1,0 +1,9 @@
+// Application settings
+app = "ConfigDemo"
+
+modules = ["auth", "logging", "cache"]
+
+limits {
+  max_clients = 200
+  timeout = 60
+}

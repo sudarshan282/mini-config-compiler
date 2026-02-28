@@ -1,0 +1,6 @@
+server {
+  port = 9000
+  debug = true
+}
+
+modules = ["auth", "cache"]

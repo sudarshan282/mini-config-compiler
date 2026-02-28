@@ -1,0 +1,14 @@
+1.create tokens
+	gcc -std=c11 -Wall -Wextra -O2 -Isrc src/main.c src/lexer.c -o mcfgc
+
+2. ast blueprint understanding
+	-std=c11 -Wall -Wextra -O2 -Isrc src/main.c src/lexer.c src/ast.c -o mcfgc
+
+3. construction of ast
+	gcc -std=c11 -Wall -Wextra -O2 -Isrc src/main.c src/lexer.c src/ast.c src/parser.c -o mcfgc
+
+4. to check for error in mcfg file
+	gcc -std=c11 -Wall -Wextra -O2 -Isrc src/main.c src/lexer.c src/ast.c src/parser.c src/semantic.c -o mcfgc
+
+5. json file generation
+	gcc -std=c11 -Wall -Wextra -O2 -Isrc src/main.c src/lexer.c src/ast.c src/parser.c src/semantic.c src/codegen.c -o mcfgc

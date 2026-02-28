@@ -1,0 +1,25 @@
+server {
+  host = "localhost"
+  port = 8080
+  debug = true
+}
+
+database {
+  engine = "postgres"
+  host = "127.0.0.1"
+  port = 5432
+  pool = 20
+}
+
+auth {
+  enabled = true
+  methods = ["password", "oauth", "otp"]
+}
+
+limits {
+  max_users = 500
+  timeout = 60
+}
+
+features = ["logging", "analytics", "backup"]
+version = "1.2.0"
