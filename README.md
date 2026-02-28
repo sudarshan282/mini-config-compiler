@@ -21,8 +21,8 @@ database {
   engine = "postgres"
   pool = 20
 }
-
-
+```
+```JSON
 {
   "server": {
     "host": "localhost",
@@ -45,7 +45,8 @@ server {
 database {
   pool = @@!!
 }
-
+```
+```text
 Semantic error: duplicate key 'server.port'
   first: 2:3
   dup:   3:3
